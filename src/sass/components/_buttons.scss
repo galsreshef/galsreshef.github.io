@@ -1,4 +1,26 @@
 /* Call to Action Button */
+
+.education::before {
+  content: "\1F477";
+}
+
+.job::before {
+  content: "\1F393";
+}
+.pilot::before {
+  content: "\2708";
+  color: cornflowerblue;
+}
+.motorcycle::before {
+  content: "\01F3CD \FE0F";
+}
+.water-sport::before {
+  content: "\1F3C4";
+}
+.cat::before {
+  content: "\1F408";
+}
+
 .cta-btn {
   display: inline-block;
   position: relative;
