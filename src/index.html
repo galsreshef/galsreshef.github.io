@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-    <title>Gal Reshef | Developer</title>
+    <title>Gal Reshef | Full Stack Developer at NetApp</title>
     <meta
       name="keywords"
-      content="AndroidSDK, Android development, Kotlin, Java, JavaScript, Python, Bash, AWS, Azure, GCP, CSS, React, React-Native, DevOps"
+      content="Full Stack Developer, NetApp, JavaScript, Python, React, Node.js, TypeScript, AWS, Azure, GCP, CSS, HTML, Web Development, Software Engineering, Automation, DevOps, Kotlin, Java"
     />
     <meta
       name="description"
-      content="Gal-Reshef | Profile website for Gal Reshef, a developer from Israel"
+      content="Gal Reshef | Full Stack Developer at NetApp - Professional portfolio showcasing modern web development projects and expertise"
     />
 
     <link
@@ -25,367 +25,264 @@
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
- 
+
+    <!-- Dark mode toggle button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Switch between light and dark themes">
+      <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+
 <body>
     <div id="top"></div>
 
     <!-- **** Hero Section **** -->
-    <section id="hero" class="jumbotron">
+    <section id="hero" class="jumbotron" role="banner">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Gal Reshef</span>
-          <br />
-        I'm a Developer from Israel.
+          <span class="hero-name">Gal Reshef</span>
+          <span class="hero-profession">Full Stack Developer</span>
+          <span class="hero-workplace">at NetApp</span>
         </h1>
-        <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Know more</a
-          >
-        </p>
+        <div class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about" aria-label="Learn more about Gal Reshef">
+            Learn More
+          </a>
+        </div>
       </div>
     </section>
     <!-- /END Hero Section -->
 
   <!-- **** About Section **** -->
   <section id="about">
-    <div class="container">
-      <h2 class="section-title load-hidden">About me</h2>
-      <div class="row about-wrapper">
-        <div class="col-md-6 col-sm-12">
-          <div class="about-wrapper__image load-hidden">
-            <img
-            alt="Profile Image"
-            class="img-fluid rounded shadow-lg"
-            height="auto"
-            width="300px"
-            src="assets/profile.jpg"
-            alt="Profile Image"
-            />
+    <div class="about-container">
+      <h2 class="section-title load-hidden">About Me</h2>
+
+      <div class="about-content">
+        <div class="about-image load-hidden">
+          <div class="profile-container">
+            <img src="assets/profile.jpg" alt="Gal Reshef" class="profile-image">
           </div>
         </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="about-wrapper__info load-hidden">
-            <p class="about-wrapper__info-text education">B.Sc. in Computer Science.<br>&ensp;&ensp;&ensp;&ensp;Majoring in Java backend & Android native.</p>
-            <p class="about-wrapper__info-text job">Work at Netapp as a Software Automation Enginner.</p>
-            <p class="about-wrapper__info-text pilot">Instrument rated FAA commercial pilot since 2016.</p>            
-            <p class="about-wrapper__info-text motorcycle">Own a Yamaha Motorcycle and riding it every weekend all around Israel</p>
-            <p class="about-wrapper__info-text water-sport">Water sports are my favorite I Kite-surf, Scuba-dive, Kayak and swim.</p>
-            <p class="about-wrapper__info-text cat">James is my Scottish-fold cat.</p>
-            <span class="d-flex mt-3">
-              <a
+
+        <div class="about-info load-hidden">
+          <p class="about-intro">
+            Full Stack Developer at NetApp with a passion for creating innovative solutions and exploring new technologies.
+          </p>
+
+          <div class="about-text">
+            <p class="about-paragraph">
+              🎓 I hold a <strong>B.Sc. in Computer Science</strong> with a focus on Java backend & Android native development.
+              💼 As a <strong>Full Stack Developer at NetApp</strong>, I build innovative solutions and scalable applications that make a real impact.
+            </p>
+
+            <p class="about-paragraph">
+              ✈️ Since 2016, I've been an <strong>instrument-rated FAA commercial pilot</strong>, which taught me precision and attention to detail.
+              🏍️ I explore the world on my <strong>Honda Africa Twin 1100</strong>, traveling off-road around Israel and beyond.
+            </p>
+
+            <p class="about-paragraph">
+              🏂 When winter comes, you'll find me on the slopes as a passionate snowboarder.
+              🌊 During warmer months, I'm all about <strong>water sports</strong> - kite-surfing, scuba-diving, kayaking, and swimming.
+              🐱 At home, I share my space with <strong>James</strong>, my Scottish Fold cat companion.
+            </p>
+
+            <p class="about-motto">
+              <strong>I get things DONE.</strong>
+            </p>
+          </div>
+
+          <div class="resume-section">
+            <a
               rel="noreferrer"
               target="_blank"
               class="cta-btn cta-btn--resume"
               href="assets/resume.pdf"
-              >
-              View Resume
+              aria-label="Download Gal Reshef's resume (PDF)"
+            >
+              📄 View Resume
             </a>
-          </span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- /END About Section -->
+  </section>
+  <!-- /END About Section -->
 
 <!-- **** Projects Section **** -->
 <section id="projects">
   <div class="container">
-    <div class="project-wrapper">
-      <h2 class="section-title dark-blue-text">Projects</h2>
-      
-  <!-- project 01 Moto -->
-      <div class="row">
-        <div class="col-lg-4 col-sm-12">
-          <div class="project-wrapper__text load-hidden">
-            <h3 class="project-wrapper__text-title">Moto app</h3>
-            <div>
-              <p class="mb-4">
-                As a motorcycle rider myself, I found the need for a place that would gather information for other motorcyclist.
-                In the application you can read interesting blogs about motorcycles, accessories and other relevant content.
-                In the hiking area, you can find a large number of cycling routes that have been recommended and tested by 
-                experienced riders and include several points of interest (gas station, lookout for photography, recommended 
-                restaurant).
-                In addition to the application there is a market for motorcycles and accessories.
-                The application was written in Kotlin in the MVVM architecture, Dagger-Hilt for DI, use of firestore as a 
-                database, ROOM an offline database, Navigation, Auth, View binidng, Data binding, Animations, and the use of a 
-                large number of APIs such as Google Maps Google Direction
-              </p>
-            </div>
-            <a
-            rel="noreferrer"
-            target="_blank"
-            class="cta-btn cta-btn--hero"
-            href="https://github.com/galsreshef/Moto-Public#readme"
-            >
-            Repo
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-8 col-sm-12">
-        <div class="project-wrapper__image load-hidden">
-          <a rel="noreferrer" href="https://github.com/galsreshef/Moto-Public#readme" target="_blank">
-            <div
-            data-tilt
-            data-tilt-max="4"
-            data-tilt-glare="true"
-            data-tilt-max-glare="0.5"
-            class="thumbnail rounded js-tilt"
-            >
-            <img
-            alt="Project Image"
-            class="img-fluid"
-            src="https://github.com/galsreshef/Moto-Public/blob/main/Images/Logo.png?raw=true?raw=true"
-            width="256px"
-            height="256px"
-            />
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- Project Card 1: Moto App -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://github.com/galsreshef/Moto-Public/blob/main/Images/Logo.png?raw=true" alt="Moto App">
+          <div class="project-overlay">
+            <a href="https://github.com/galsreshef/Moto-Public#readme" target="_blank" class="view-project">View Project</a>
           </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- /END Project -->
-  
-  <!-- project 02 MathKef -->
-  <div class="row">
-    <div class="col-lg-4 col-sm-12">
-      <div class="project-wrapper__text load-hidden">
-        <h3 class="project-wrapper__text-title">MathKef</h3>
-        <div>
-          <p class="mb-4">
-            <p>Final Project in collaboration with Gool.co.il website. 
-              MathKef is a native Android application developed in Java.
-            </p>
-            <p>MathKef is a multiplayer Mathematics game. Using Firebase live DB the game scaleble and fast.</p>
-            <p>Support User authentication using OTP (one time password), Multi language support, and updating question list.</p>
-            <p>MathKef is uploaded to Google Play store since</p>
-          </p>
         </div>
-        <a
-        rel="noreferrer"
-        target="_blank"
-        class="cta-btn cta-btn--hero"
-        href="http://www.hitprojectscenter.com/?page_id=2771"
-        >
-        Poster
-      </a>
-    
+        <div class="project-content">
+          <h3 class="project-title">Moto App</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">Kotlin</span>
+            <span class="tech-tag">MVVM</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Google Maps</span>
+          </div>
+          <p class="project-description">
+            A comprehensive platform for motorcyclists featuring blogs, tested riding routes with points of interest, and a marketplace for motorcycles and accessories.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/galsreshef/Moto-Public#readme" target="_blank" class="project-link primary">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2: MathKef -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://github.com/galsreshef/MathKef/blob/master/app/src/main/res/drawable-mdpi/mathkef_logo.png?raw=true" alt="MathKef">
+          <div class="project-overlay">
+            <a href="https://play.google.com/store/apps/details?id=com.thegalos.mathkef" target="_blank" class="view-project">View Live</a>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">MathKef</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Android</span>
+            <span class="tech-tag">Multi-language</span>
+          </div>
+          <p class="project-description">
+            Multiplayer mathematics game with real-time Firebase database, OTP authentication, multi-language support, and live question updates. Available on Google Play Store.
+          </p>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=com.thegalos.mathkef" target="_blank" class="project-link primary">
+              <i class="fab fa-google-play"></i> Play Store
+            </a>
+            <a href="http://www.hitprojectscenter.com/?page_id=2771" target="_blank" class="project-link secondary">
+              <i class="fas fa-info-circle"></i> Details
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3: WhatsTap -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://github.com/galsreshef/WhatsTap-public/blob/main/Images/logo.png?raw=true" alt="WhatsTap">
+          <div class="project-overlay">
+            <a href="https://github.com/galsreshef/WhatsTap-public/#readme" target="_blank" class="view-project">View Project</a>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">WhatsTap</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">Kotlin</span>
+            <span class="tech-tag">Android</span>
+            <span class="tech-tag">WhatsApp API</span>
+          </div>
+          <p class="project-description">
+            Android application that allows users to send WhatsApp messages without saving contacts. Clean, efficient tool for direct messaging.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/galsreshef/WhatsTap-public/#readme" target="_blank" class="project-link primary">
+              <i class="fab fa-github"></i> View Code
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.thegalos.whatstap" target="_blank" class="project-link secondary">
+              <i class="fab fa-google-play"></i> Download
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 4: SavtaBot -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://github.com/galsreshef/SavtaBot/blob/master/app/src/main/res/drawable/savta.png?raw=true" alt="SavtaBot">
+          <div class="project-overlay">
+            <a href="https://github.com/galsreshef/SavtaBot#readme" target="_blank" class="view-project">View Project</a>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">SavtaBot</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">DialogFlow</span>
+            <span class="tech-tag">Google TTS</span>
+            <span class="tech-tag">Voice Recognition</span>
+          </div>
+          <p class="project-description">
+            Personal assistant for elderly users using natural language processing, voice-to-text conversion, and DialogFlow for intelligent responses with encouraging feedback.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/galsreshef/SavtaBot#readme" target="_blank" class="project-link primary">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 5: Quarantine Circle -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://github.com/galsreshef/Quarantine-circle-public/blob/main/Images/logo_quarantine_circle.png?raw=true" alt="Quarantine Circle">
+          <div class="project-overlay">
+            <a href="https://github.com/galsreshef/Quarantine-circle-public/#readme" target="_blank" class="view-project">View Project</a>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Quarantine Circle</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Google Maps</span>
+            <span class="tech-tag">Geofencing</span>
+            <span class="tech-tag">Location Services</span>
+          </div>
+          <p class="project-description">
+            Social distancing app using geofencing and Google Maps API to monitor user location relative to their residence with intuitive UI showing allowed radius.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/galsreshef/Quarantine-circle-public/#readme" target="_blank" class="project-link primary">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 6: HiT Mart -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="https://github.com/galsreshef/SuperMarket-Management/blob/master/SuperMarket-Management/project_logo.png?raw=true" alt="HiT Mart">
+          <div class="project-overlay">
+            <a href="https://github.com/galsreshef/SuperMarket-Management/#readme" target="_blank" class="view-project">View Project</a>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">HiT Mart</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">MVC</span>
+            <span class="tech-tag">JUnit</span>
+            <span class="tech-tag">Desktop</span>
+          </div>
+          <p class="project-description">
+            Desktop supermarket management system built with MVC architecture and JUnit testing, providing comprehensive sales and business control functionality.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/galsreshef/SuperMarket-Management/#readme" target="_blank" class="project-link primary">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
-</div>
-<div class="col-lg-8 col-sm-12">
-  <div class="project-wrapper__image load-hidden">
-    <a rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.thegalos.mathkef" target="_blank">
-      <div
-      data-tilt
-      data-tilt-max="4"
-      data-tilt-glare="true"
-      data-tilt-max-glare="0.8"
-      class="thumbnail rounded js-tilt"
-      >
-      <img
-      alt="Project Image"
-      class="img-fluid"
-      src="https://github.com/galsreshef/MathKef/blob/master/app/src/main/res/drawable-mdpi/mathkef_logo.png?raw=true"
-      width="256px"
-      height="256px"
-      />
-    </div>
-  </a>
-</div>
-</div>
-</div>
-<!-- /END Project -->
-
-  <!-- project 03 WhatsTap -->
-<div class="row">
-  <div class="col-lg-4 col-sm-12">
-    <div class="project-wrapper__text load-hidden">
-      <h3 class="project-wrapper__text-title">WhatsTap</h3>
-      <div>
-        <p class="mb-4">
-          Android Application written in Kotlin.
-          A Tool that allows users to send WhatsApp text messages to other users,
-          without their number as a contact.
-        </p>
-      </div>
-      <a
-      rel="noreferrer"
-      target="_blank"
-      class="cta-btn cta-btn--hero"
-      href="https://github.com/galsreshef/WhatsTap-public/#readme"
-      >
-      Repo
-    </a>
-</div>
-</div>
-<div class="col-lg-8 col-sm-12">
-  <div class="project-wrapper__image load-hidden">
-    <a rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.thegalos.whatstap" target="_blank">
-      <div
-      data-tilt
-      data-tilt-max="4"
-      data-tilt-glare="true"
-      data-tilt-max-glare="0.5"
-      class="thumbnail rounded js-tilt"
-      >
-      <img
-      alt="Project Image"
-      class="img-fluid"
-      src="https://github.com/galsreshef/WhatsTap-public/blob/main/Images/logo.png?raw=true"
-      width="256px"
-      height="256px"
-      />
-    </div>
-  </a>
-</div>
-</div>
-</div>
-<!-- /END Project -->
-
-  <!-- project 04 SavtaBot -->
-<div class="row">
-  <div class="col-lg-4 col-sm-12">
-    <div class="project-wrapper__text load-hidden">
-      <h3 class="project-wrapper__text-title">SavtaBot</h3>
-      <div>
-        <p class="mb-4">
-          Personal assistant for the elderly. Using Natural language recognition provided by Google,
-          the app convert voice to text and post it on Dialgo-Flow which can detact specific words and sentences 
-          and replay with a custom answer. the answer is shown in a beautiful UI to the user and its also converted 
-          to speach using Google TTS The app encourages the creation of a dialogue and can give positive and encouraging 
-          feedback to the
-          Android Application written in Java.
-        </p>
-      </div>
-      <a
-      rel="noreferrer"
-      target="_blank"
-      class="cta-btn cta-btn--hero"
-      href="https://github.com/galsreshef/SavtaBot#readme"
-      >
-      Repo
-    </a>
-</div>
-</div>
-<div class="col-lg-8 col-sm-12">
-  <div class="project-wrapper__image load-hidden">
-    <a rel="noreferrer" href="https://github.com/galsreshef/SavtaBot#readme" target="_blank">
-      <div
-      data-tilt
-      data-tilt-max="4"
-      data-tilt-glare="true"
-      data-tilt-max-glare="0.5"
-      class="thumbnail rounded js-tilt"
-      >
-      <img
-      alt="Project Image"
-      class="img-fluid"
-      src="https://github.com/galsreshef/SavtaBot/blob/master/app/src/main/res/drawable/savta.png?raw=true"
-      width="256px"
-      height="256px"
-      />
-    </div>
-  </a>
-</div>
-</div>
-</div>
-<!-- /END Project -->
-
-  <!-- project 05 Quarantine circle -->
-<div class="row">
-  <div class="col-lg-4 col-sm-12">
-    <div class="project-wrapper__text load-hidden">
-      <h3 class="project-wrapper__text-title">Quarantine Circle</h3>
-      <div>
-        <p class="mb-4">
-          Android Application written in Java.
-          A Tool A for social distancing. Using user location and Geofencing 
-          the app determents wheter user is in the allowed distance from his residence.
-          The app works with Google Maps API to reflect an easy to understand UI 
-          that include the Circle radius allowed and a distance need to regress in case outside the allowed area.
-        </p>
-      </div>
-      <a
-      rel="noreferrer"
-      target="_blank"
-      class="cta-btn cta-btn--hero"
-      href="https://github.com/galsreshef/Quarantine-circle-public/#readme"
-      >
-      Repo
-    </a>
-  </div>
-</div>
-<div class="col-lg-8 col-sm-12">
-  <div class="project-wrapper__image load-hidden">
-    <a rel="noreferrer" href="https://github.com/galsreshef/Quarantine-circle-public/#readme" target="_blank">
-      <div
-      data-tilt
-      data-tilt-max="4"
-      data-tilt-glare="true"
-      data-tilt-max-glare="0.5"
-      class="thumbnail rounded js-tilt"
-      >
-      <img
-      alt="Project Image"
-      class="img-fluid"
-      src="https://github.com/galsreshef/Quarantine-circle-public/blob/main/Images/logo_quarantine_circle.png?raw=true"
-      width="256px"
-      height="256px"
-      />
-    </div>
-  </a>
-</div>
-</div>
-</div>
-<!-- /END Project -->
-
-  <!-- project 06 HiT Mart -->
-<div class="row">
-  <div class="col-lg-4 col-sm-12">
-    <div class="project-wrapper__text load-hidden">
-      <h3 class="project-wrapper__text-title">HiT Mart</h3>
-      <div>
-        <p class="mb-4">
-          This desktop app is the final product of a software engineering course from my studies.
-          Written by following MVC architecture the application uses J-Unit. 
-          The Application support full Sales and business control.
-        </p>
-      </div>
-      <a
-      rel="noreferrer"
-      target="_blank"
-      class="cta-btn cta-btn--hero"
-      href="https://github.com/galsreshef/SuperMarket-Management/#readme"
-      >
-      Repo
-    </a>
-  </div>
-</div>
-<div class="col-lg-8 col-sm-12">
-  <div class="project-wrapper__image load-hidden">
-    <a rel="norefeer" href="https://github.com/galsreshef/SuperMarket-Management/#readme" target="_blank">
-      <div
-      data-tilt
-      data-tilt-max="4"
-      data-tilt-glare="true"
-      data-tilt-max-glare="0.5"
-      class="thumbnail rounded js-tilt"
-      >
-      <img
-      alt="Project Image"
-      class="img-fluid"
-      src="https://github.com/galsreshef/SuperMarket-Management/blob/master/SuperMarket-Management/project_logo.png?raw=true"
-      width="256px"
-      height="256px"
-      />
-    </div>
-  </a>
-</div>
-</div>
-</div>
-<!-- /END Project -->
-</div>
-</div>
 </section>
 <!-- /END Projects Section -->
 
@@ -398,8 +295,9 @@
       rel="noreferrer"
       target="_blank"
       class="cta-btn cta-btn--resume"
-      href="mailto:Galsreshef@email.com"
-      >Email me!</a
+      href="mailto:work@gal-reshef.com"
+      aria-label="Send email to Gal Reshef"
+      >📧 Get In Touch</a
       >
     </div>
   </div>
@@ -407,39 +305,38 @@
 <!-- /END Contact Section -->
 
 <!-- **** Footer Section **** -->
-<footer class="footer navbar-static-bottom">
+<footer class="footer" role="contentinfo">
   <div class="container">
-    <a rel="noreferrer" href="#top" class="back-to-top">
-      <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+    <a rel="noreferrer" href="#top" class="back-to-top" aria-label="Back to top">
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
     </a>
-    <div class="social-links">
-      <a rel="noreferrer" href="https://play.google.com/store/apps/developer?id=Gal+Reshef" target="_blank">
-        <i class="fa-brands fa-google-play"></i>
+    <div class="social-links" role="navigation" aria-label="Social media links">
+      <a rel="noreferrer" href="https://play.google.com/store/apps/developer?id=Gal+Reshef" target="_blank" aria-label="Visit Gal's Google Play Store">
+        <i class="fa-brands fa-google-play" aria-hidden="true"></i>
       </a>
-      <a rel="noreferrer" href="https://www.linkedin.com/in/gal-reshef-software-developer/" target="_blank">
-        <i class="fa-brands fa-linkedin-in"></i>
+      <a rel="noreferrer" href="https://www.linkedin.com/in/gal-reshef-software-developer/" target="_blank" aria-label="Connect on LinkedIn">
+        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
       </a>
-      <a rel="noreferrer" href="https://github.com/galsreshef" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a> 
-      <a rel="noreferrer" href="https://www.instagram.com/the.galos/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
+      <a rel="noreferrer" href="https://github.com/galsreshef" target="_blank" aria-label="View GitHub profile">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
       </a>
-            <a rel="noreferrer" href="https://www.facebook.com/galreshef/" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
+      <a rel="noreferrer" href="https://www.instagram.com/the.galos/" target="_blank" aria-label="Follow on Instagram">
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a rel="noreferrer" href="https://www.facebook.com/galreshef/" target="_blank" aria-label="Connect on Facebook">
+        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
       </a>
     </div>
     <hr />
     
     <p class="footer__text">
-      © 2022 - developed by Gal Reshef
-      
+      © 2025 - Developed by Gal Reshef
     </p>
     
   </div>
 </footer>
 <!-- /END Footer Section -->
 
-    <script defer type="module" src="index.js"></script>
+    <script defer type="module" src="index.ts"></script>
   </body>
 </html>
